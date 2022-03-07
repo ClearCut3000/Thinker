@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		365A018627D66DE600EFA35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018527D66DE600EFA35B /* AppDelegate.swift */; };
 		365A018827D66DE600EFA35B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018727D66DE600EFA35B /* SceneDelegate.swift */; };
-		365A018A27D66DE600EFA35B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018927D66DE600EFA35B /* ViewController.swift */; };
-		365A018D27D66DE600EFA35B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365A018B27D66DE600EFA35B /* Main.storyboard */; };
+		365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018927D66DE600EFA35B /* HomeViewController.swift */; };
 		365A018F27D66DEE00EFA35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365A018E27D66DEE00EFA35B /* Assets.xcassets */; };
 		365A019227D66DEE00EFA35B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */; };
+		365A019F27D672D300EFA35B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A019E27D672D300EFA35B /* ProfileViewController.swift */; };
+		365A01A127D6732300EFA35B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01A027D6732300EFA35B /* TabBarViewController.swift */; };
+		365A01A327D673A900EFA35B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01A227D673A900EFA35B /* SignInViewController.swift */; };
+		365A01A527D6803700EFA35B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01A427D6803700EFA35B /* SignUpViewController.swift */; };
+		365A01A727D6808900EFA35B /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01A627D6808900EFA35B /* ViewPostViewController.swift */; };
+		365A01A927D680A100EFA35B /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01A827D680A100EFA35B /* CreateNewPostViewController.swift */; };
+		365A01AB27D680FF00EFA35B /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01AA27D680FF00EFA35B /* IAPManager.swift */; };
+		365A01AD27D6812500EFA35B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01AC27D6812500EFA35B /* DatabaseManager.swift */; };
+		365A01AF27D6814900EFA35B /* AuthManaget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01AE27D6814900EFA35B /* AuthManaget.swift */; };
+		365A01B127D6816200EFA35B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01B027D6816200EFA35B /* StorageManager.swift */; };
+		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thinker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A018227D66DE600EFA35B /* Thinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A018527D66DE600EFA35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365A018727D66DE600EFA35B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		365A018927D66DE600EFA35B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		365A018C27D66DE600EFA35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		365A018927D66DE600EFA35B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		365A018E27D66DEE00EFA35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365A019127D66DEE00EFA35B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		365A019327D66DEE00EFA35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365A019E27D672D300EFA35B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		365A01A027D6732300EFA35B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		365A01A227D673A900EFA35B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		365A01A427D6803700EFA35B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		365A01A627D6808900EFA35B /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		365A01A827D680A100EFA35B /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		365A01AA27D680FF00EFA35B /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		365A01AC27D6812500EFA35B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		365A01AE27D6814900EFA35B /* AuthManaget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManaget.swift; sourceTree = "<group>"; };
+		365A01B027D6816200EFA35B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +63,10 @@
 		365A017927D66DE600EFA35B = {
 			isa = PBXGroup;
 			children = (
-				365A018427D66DE600EFA35B /* Thinker */,
 				365A018327D66DE600EFA35B /* Products */,
+				365A018427D66DE600EFA35B /* Thinker */,
+				F816F62360AE0B695D84AE85 /* Pods */,
+				D63D890D98E99A1DF97AECE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,105 @@
 		365A018427D66DE600EFA35B /* Thinker */ = {
 			isa = PBXGroup;
 			children = (
-				365A018527D66DE600EFA35B /* AppDelegate.swift */,
-				365A018727D66DE600EFA35B /* SceneDelegate.swift */,
-				365A018927D66DE600EFA35B /* ViewController.swift */,
-				365A018B27D66DE600EFA35B /* Main.storyboard */,
-				365A018E27D66DEE00EFA35B /* Assets.xcassets */,
-				365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */,
-				365A019327D66DEE00EFA35B /* Info.plist */,
+				365A019D27D6713100EFA35B /* SupportedFiles */,
+				365A019C27D670F100EFA35B /* Managers */,
+				365A019B27D670DB00EFA35B /* Controllers */,
+				365A019A27D670CA00EFA35B /* Views */,
+				365A019927D670BB00EFA35B /* Models */,
 			);
 			path = Thinker;
+			sourceTree = "<group>";
+		};
+		365A019927D670BB00EFA35B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		365A019A27D670CA00EFA35B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		365A019B27D670DB00EFA35B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				365A01B227D6878B00EFA35B /* CoreTabs */,
+				365A01B327D687A700EFA35B /* Auth */,
+				365A01B427D687BC00EFA35B /* Posts */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		365A019C27D670F100EFA35B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				365A01AA27D680FF00EFA35B /* IAPManager.swift */,
+				365A01AC27D6812500EFA35B /* DatabaseManager.swift */,
+				365A01AE27D6814900EFA35B /* AuthManaget.swift */,
+				365A01B027D6816200EFA35B /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		365A019D27D6713100EFA35B /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				365A018527D66DE600EFA35B /* AppDelegate.swift */,
+				365A018727D66DE600EFA35B /* SceneDelegate.swift */,
+				365A018E27D66DEE00EFA35B /* Assets.xcassets */,
+				365A019327D66DEE00EFA35B /* Info.plist */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		365A01B227D6878B00EFA35B /* CoreTabs */ = {
+			isa = PBXGroup;
+			children = (
+				365A018927D66DE600EFA35B /* HomeViewController.swift */,
+				365A019E27D672D300EFA35B /* ProfileViewController.swift */,
+				365A01A027D6732300EFA35B /* TabBarViewController.swift */,
+			);
+			path = CoreTabs;
+			sourceTree = "<group>";
+		};
+		365A01B327D687A700EFA35B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				365A01A227D673A900EFA35B /* SignInViewController.swift */,
+				365A01A427D6803700EFA35B /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		365A01B427D687BC00EFA35B /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				365A01A627D6808900EFA35B /* ViewPostViewController.swift */,
+				365A01A827D680A100EFA35B /* CreateNewPostViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		D63D890D98E99A1DF97AECE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F816F62360AE0B695D84AE85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */,
+				BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 365A019627D66DEE00EFA35B /* Build configuration list for PBXNativeTarget "Thinker" */;
 			buildPhases = (
+				009CC551E8F2BF2793E77BA9 /* [CP] Check Pods Manifest.lock */,
 				365A017E27D66DE600EFA35B /* Sources */,
 				365A017F27D66DE600EFA35B /* Frameworks */,
 				365A018027D66DE600EFA35B /* Resources */,
+				8851682F0BAC1BED33F3B6BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +244,77 @@
 			files = (
 				365A019227D66DEE00EFA35B /* LaunchScreen.storyboard in Resources */,
 				365A018F27D66DEE00EFA35B /* Assets.xcassets in Resources */,
-				365A018D27D66DE600EFA35B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		009CC551E8F2BF2793E77BA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Thinker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8851682F0BAC1BED33F3B6BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thinker/Pods-Thinker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Thinker/Pods-Thinker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Thinker/Pods-Thinker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		365A017E27D66DE600EFA35B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365A018A27D66DE600EFA35B /* ViewController.swift in Sources */,
+				365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */,
+				365A01AD27D6812500EFA35B /* DatabaseManager.swift in Sources */,
+				365A01A527D6803700EFA35B /* SignUpViewController.swift in Sources */,
 				365A018627D66DE600EFA35B /* AppDelegate.swift in Sources */,
+				365A01A327D673A900EFA35B /* SignInViewController.swift in Sources */,
+				365A019F27D672D300EFA35B /* ProfileViewController.swift in Sources */,
+				365A01A927D680A100EFA35B /* CreateNewPostViewController.swift in Sources */,
+				365A01AF27D6814900EFA35B /* AuthManaget.swift in Sources */,
+				365A01AB27D680FF00EFA35B /* IAPManager.swift in Sources */,
+				365A01A127D6732300EFA35B /* TabBarViewController.swift in Sources */,
 				365A018827D66DE600EFA35B /* SceneDelegate.swift in Sources */,
+				365A01A727D6808900EFA35B /* ViewPostViewController.swift in Sources */,
+				365A01B127D6816200EFA35B /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		365A018B27D66DE600EFA35B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				365A018C27D66DE600EFA35B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +444,7 @@
 		};
 		365A019727D66DEE00EFA35B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,12 +452,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Thinker/Info.plist;
+				INFOPLIST_FILE = Thinker/SupportedFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +468,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		365A019827D66DEE00EFA35B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,12 +482,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CJ7JF497NG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Thinker/Info.plist;
+				INFOPLIST_FILE = Thinker/SupportedFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

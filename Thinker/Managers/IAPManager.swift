@@ -6,3 +6,27 @@
 //
 
 import Foundation
+import Purchases
+
+final class IAPManager {
+
+  //MARK: - Properties
+  static let shared = IAPManager()
+
+  private init() {}
+
+  //MARK: - Methods
+  func isPremium() {
+
+  }
+
+  func subscribe() {
+
+  }
+
+  func restorePurchases() {
+
+  }
+
+
+}

@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+final class StorageManager {
+
+  //MARK: - Propeties
+  static let shared = StorageManager()
+
+  private init() {}
+
+  static let database = Storage.storage()
+
+
+}
+
+

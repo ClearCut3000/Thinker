@@ -6,3 +6,19 @@
 //
 
 import Foundation
+import FirebaseFirestore
+
+final class DatabaseManager {
+
+  //MARK: - Properties
+  static let shared = DatabaseManager()
+
+  private init() {}
+
+  static let database = Firestore.firestore()
+
+  //MARK: - Methods
+  public func insertBlogPost() {
+    
+  }
+}

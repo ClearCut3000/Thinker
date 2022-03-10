@@ -23,6 +23,11 @@
 		365A01AF27D6814900EFA35B /* AuthManaget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01AE27D6814900EFA35B /* AuthManaget.swift */; };
 		365A01B127D6816200EFA35B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01B027D6816200EFA35B /* StorageManager.swift */; };
 		365A01B627D7DD7C00EFA35B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 365A01B527D7DD7B00EFA35B /* GoogleService-Info.plist */; };
+		365A01B827D92E4700EFA35B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01B727D92E4700EFA35B /* User.swift */; };
+		365A01BA27D92E9300EFA35B /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01B927D92E9300EFA35B /* BlogPost.swift */; };
+		365A01BD27D9391300EFA35B /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01BC27D9391300EFA35B /* PayWallViewController.swift */; };
+		365A01C027DA910D00EFA35B /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */; };
+		365A01C227DA925D00EFA35B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C127DA925D00EFA35B /* Extensions.swift */; };
 		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,12 @@
 		365A01AE27D6814900EFA35B /* AuthManaget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManaget.swift; sourceTree = "<group>"; };
 		365A01B027D6816200EFA35B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		365A01B527D7DD7B00EFA35B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		365A01B727D92E4700EFA35B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		365A01B927D92E9300EFA35B /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		365A01BC27D9391300EFA35B /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		365A01BE27D93BF700EFA35B /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		365A01C127DA925D00EFA35B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +106,8 @@
 		365A019927D670BB00EFA35B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				365A01B727D92E4700EFA35B /* User.swift */,
+				365A01B927D92E9300EFA35B /* BlogPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */,
+				365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +124,7 @@
 		365A019B27D670DB00EFA35B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				365A01BB27D938EF00EFA35B /* Other */,
 				365A01B227D6878B00EFA35B /* CoreTabs */,
 				365A01B327D687A700EFA35B /* Auth */,
 				365A01B427D687BC00EFA35B /* Posts */,
@@ -136,6 +151,8 @@
 				365A018E27D66DEE00EFA35B /* Assets.xcassets */,
 				365A01B527D7DD7B00EFA35B /* GoogleService-Info.plist */,
 				365A019327D66DEE00EFA35B /* Info.plist */,
+				365A01BE27D93BF700EFA35B /* Configuration.storekit */,
+				365A01C127DA925D00EFA35B /* Extensions.swift */,
 			);
 			path = SupportedFiles;
 			sourceTree = "<group>";
@@ -166,6 +183,14 @@
 				365A01A827D680A100EFA35B /* CreateNewPostViewController.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		365A01BB27D938EF00EFA35B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				365A01BC27D9391300EFA35B /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		D63D890D98E99A1DF97AECE0 /* Frameworks */ = {
@@ -300,12 +325,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365A01BA27D92E9300EFA35B /* BlogPost.swift in Sources */,
+				365A01C227DA925D00EFA35B /* Extensions.swift in Sources */,
 				365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */,
 				365A01AD27D6812500EFA35B /* DatabaseManager.swift in Sources */,
 				365A01A527D6803700EFA35B /* SignUpViewController.swift in Sources */,
 				365A018627D66DE600EFA35B /* AppDelegate.swift in Sources */,
+				365A01C027DA910D00EFA35B /* PayWallHeaderView.swift in Sources */,
 				365A01A327D673A900EFA35B /* SignInViewController.swift in Sources */,
 				365A019F27D672D300EFA35B /* ProfileViewController.swift in Sources */,
+				365A01B827D92E4700EFA35B /* User.swift in Sources */,
 				365A01A927D680A100EFA35B /* CreateNewPostViewController.swift in Sources */,
 				365A01AF27D6814900EFA35B /* AuthManaget.swift in Sources */,
 				365A01AB27D680FF00EFA35B /* IAPManager.swift in Sources */,
@@ -313,6 +342,7 @@
 				365A018827D66DE600EFA35B /* SceneDelegate.swift in Sources */,
 				365A01A727D6808900EFA35B /* ViewPostViewController.swift in Sources */,
 				365A01B127D6816200EFA35B /* StorageManager.swift in Sources */,
+				365A01BD27D9391300EFA35B /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

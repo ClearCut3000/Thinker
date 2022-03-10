@@ -28,6 +28,7 @@
 		365A01BD27D9391300EFA35B /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01BC27D9391300EFA35B /* PayWallViewController.swift */; };
 		365A01C027DA910D00EFA35B /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */; };
 		365A01C227DA925D00EFA35B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C127DA925D00EFA35B /* Extensions.swift */; };
+		365A01C527DA9E8000EFA35B /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */; };
 		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		365A01BE27D93BF700EFA35B /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		365A01C127DA925D00EFA35B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 			children = (
 				365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */,
 				365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */,
+				365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				365A01BA27D92E9300EFA35B /* BlogPost.swift in Sources */,
+				365A01C527DA9E8000EFA35B /* PayWallDescriptionView.swift in Sources */,
 				365A01C227DA925D00EFA35B /* Extensions.swift in Sources */,
 				365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */,
 				365A01AD27D6812500EFA35B /* DatabaseManager.swift in Sources */,

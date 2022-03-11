@@ -5,17 +5,24 @@
 //  Created by Николай Никитин on 07.03.2022.
 //
 
+import Purchases
 import Firebase
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
+    Purchases.configure(withAPIKey: "appl_XfruVCGbOWhICztXIwlaWAhqWmA")
+    IAPManager.shared.fetchPackages { package in
+      guard let package = package else {
+        return
+      }
+      print("Got package!")
+      IAPManager.shared.subscribe(package: package)
+    }
     return true
   }
 

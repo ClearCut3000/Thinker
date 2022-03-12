@@ -17,10 +17,16 @@ final class IAPManager {
   private init() {}
 
   //MARK: - Methods
-  public func setSubscriptionsStatus() {
+  public func getSubscriptionsStatus(completion: ((Bool) -> Void)?) {
     Purchases.shared.purchaserInfo { info, error in
       guard let entitlements = info?.entitlements, error == nil else { return }
-      print ("\(entitlements)")
+      if entitlements.all["Premium"]?.isActive == true {
+        UserDefaults.standard.set(true, forKey: "premium")
+        completion?(true)
+      } else {
+        UserDefaults.standard.set(false, forKey: "premium")
+        completion?(false)
+      }
     }
   }
 
@@ -28,7 +34,11 @@ final class IAPManager {
     return UserDefaults.standard.bool(forKey: "premium")
   }
 
-  public func subscribe(package: Purchases.Package) {
+  public func subscribe(package: Purchases.Package, completion: @escaping (Bool) -> Void) {
+    guard !isPremium() else {
+      completion(true)
+      return
+    }
     Purchases.shared.purchasePackage(package) { transaction, info, error, userCancelled in
       guard let transaction = transaction,
             let entitlements = info?.entitlements,
@@ -40,6 +50,13 @@ final class IAPManager {
       case .purchasing:
         print("purchasing")
       case .purchased:
+        if entitlements.all["Premium"]?.isActive == true {
+          UserDefaults.standard.set(true, forKey: "premium")
+          completion(true)
+        } else {
+          UserDefaults.standard.set(false, forKey: "premium")
+          completion(false)
+        }
         print("purchased: \(entitlements)")
         UserDefaults.standard.set(true, forKey: "premium")
       case .failed:
@@ -54,10 +71,16 @@ final class IAPManager {
     }
   }
 
-  public func restorePurchases() {
+  public func restorePurchases(completion: @escaping (Bool) -> Void) {
     Purchases.shared.restoreTransactions { info, error in
       guard let entitlements = info?.entitlements, error == nil else { return }
-      print ("Restored: \(entitlements)")
+      if entitlements.all["Premium"]?.isActive == true {
+        UserDefaults.standard.set(true, forKey: "premium")
+        completion(true)
+      } else {
+        UserDefaults.standard.set(false, forKey : "premium")
+        completion(false)
+      }
     }
   }
 

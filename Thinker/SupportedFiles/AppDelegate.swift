@@ -16,13 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Override point for customization after application launch.
     FirebaseApp.configure()
     Purchases.configure(withAPIKey: "appl_XfruVCGbOWhICztXIwlaWAhqWmA")
-    IAPManager.shared.fetchPackages { package in
-      guard let package = package else {
-        return
-      }
-      print("Got package!")
-      IAPManager.shared.subscribe(package: package)
-    }
+    IAPManager.shared.getSubscriptionsStatus(completion: nil)
     return true
   }
 

@@ -30,6 +30,7 @@
 		365A01C227DA925D00EFA35B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C127DA925D00EFA35B /* Extensions.swift */; };
 		365A01C527DA9E8000EFA35B /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */; };
 		365A01C727DBD51A00EFA35B /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 365A01C627DBD51A00EFA35B /* StoreKitTestCertificate.cer */; };
+		365A01C927DD327200EFA35B /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A01C827DD327100EFA35B /* SignInHeaderView.swift */; };
 		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		365A01C127DA925D00EFA35B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		365A01C627DBD51A00EFA35B /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		365A01C827DD327100EFA35B /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				365A019027D66DEE00EFA35B /* LaunchScreen.storyboard */,
 				365A01BF27DA910C00EFA35B /* PayWallHeaderView.swift */,
 				365A01C427DA9E8000EFA35B /* PayWallDescriptionView.swift */,
+				365A01C827DD327100EFA35B /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				365A018627D66DE600EFA35B /* AppDelegate.swift in Sources */,
 				365A01C027DA910D00EFA35B /* PayWallHeaderView.swift in Sources */,
 				365A01A327D673A900EFA35B /* SignInViewController.swift in Sources */,
+				365A01C927DD327200EFA35B /* SignInHeaderView.swift in Sources */,
 				365A019F27D672D300EFA35B /* ProfileViewController.swift in Sources */,
 				365A01B827D92E4700EFA35B /* User.swift in Sources */,
 				365A01A927D680A100EFA35B /* CreateNewPostViewController.swift in Sources */,

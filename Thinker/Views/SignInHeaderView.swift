@@ -1,0 +1,45 @@
+//
+//  SignInHeaderView.swift
+//  Thinker
+//
+//  Created by Николай Никитин on 12.03.2022.
+//
+
+import UIKit
+
+class SignInHeaderView: UIView {
+
+  private let imageView: UIImageView = {
+    let imageView = UIImageView()
+    imageView.contentMode = .scaleAspectFit
+    imageView.backgroundColor = .systemGreen
+
+    return imageView
+  }()
+
+  private let label: UILabel = {
+    let label = UILabel()
+    label.textAlignment = .center
+    label.numberOfLines = 0
+    label.font = .systemFont(ofSize: 20, weight: .medium)
+    label.text = "Explore millions of articles!"
+    return label
+  }()
+
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    clipsToBounds = true
+    addSubview(imageView)
+    addSubview(label)
+  }
+
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    let size: CGFloat = 
+  }
+
+}

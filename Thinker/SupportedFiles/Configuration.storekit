@@ -33,9 +33,9 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.temporary.id",
+          "productID" : "com.example.Thinker.premium",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "com.example.Thinker.premium",
+          "referenceName" : "Premium",
           "subscriptionGroupID" : "CA721CDA",
           "type" : "RecurringSubscription"
         }

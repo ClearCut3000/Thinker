@@ -21,9 +21,11 @@ final class IAPManager {
     Purchases.shared.purchaserInfo { info, error in
       guard let entitlements = info?.entitlements, error == nil else { return }
       if entitlements.all["Premium"]?.isActive == true {
+        print("Got updated status of subscribed")
         UserDefaults.standard.set(true, forKey: "premium")
         completion?(true)
       } else {
+        print("Got updated status of NOT subscribed")
         UserDefaults.standard.set(false, forKey: "premium")
         completion?(false)
       }

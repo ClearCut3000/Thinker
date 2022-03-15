@@ -18,17 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     guard let windowScene = (scene as? UIWindowScene) else { return }
     let window = UIWindow(windowScene: windowScene)
-    let viewController: UIViewController
+    let vc: UIViewController
     if AuthManager.shared.isSingnedIn {
-      viewController = UITabBarController()
+      vc = TabBarViewController()
     } else {
       let signInVC = SignInViewController()
       signInVC.navigationItem.largeTitleDisplayMode = .always
-      let naviVC = UINavigationController(rootViewController: signInVC)
-      naviVC.navigationBar.prefersLargeTitles = true
-      viewController = naviVC
+      let navVC = UINavigationController(rootViewController: signInVC)
+      navVC.navigationBar.prefersLargeTitles = true
+      vc = navVC
     }
-    window.rootViewController = viewController
+    window.rootViewController = vc
     window.makeKeyAndVisible()
     self.window = window
   }

@@ -16,6 +16,7 @@ class SignUpViewController: UITabBarController {
     let field = UITextField()
     field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
     field.leftViewMode = .always
+    field.autocorrectionType = .no
     field.placeholder = "Full name"
     field.backgroundColor = .secondarySystemBackground
     field.layer.cornerRadius = 8
@@ -91,7 +92,7 @@ class SignUpViewController: UITabBarController {
           let name = nameField.text, !name.isEmpty else { return }
     AuthManager.shared.signUp(email: email, password: password) { [weak self] success in
       if success {
-        let newUser = User(name: name, email: email, profilePictureUrl: nil)
+        let newUser = User(name: name, email: email, profilePictureRef: nil)
         DatabaseManager.shared.insert(user: newUser) { inserted in
           guard inserted else { return }
           UserDefaults.standard.set(email, forKey: "email")

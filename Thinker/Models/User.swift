@@ -11,5 +11,6 @@ import UIKit
 struct User {
   let name: String
   let email: String
-  let profilePictureUrl: URL?
+  let profilePictureRef: String?
+
 }

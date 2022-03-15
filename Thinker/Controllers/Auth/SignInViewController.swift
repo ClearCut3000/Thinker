@@ -15,6 +15,8 @@ class SignInViewController: UITabBarController {
   private let emailField:  UITextField = {
     let field = UITextField()
     field.keyboardType = .emailAddress
+    field.autocapitalizationType = .none
+    field.autocorrectionType = .no
     field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
     field.leftViewMode = .always
     field.placeholder = "E-mail address"
@@ -29,6 +31,8 @@ class SignInViewController: UITabBarController {
     field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 50))
     field.leftViewMode = .always
     field.placeholder = "Password field"
+    field.autocapitalizationType = .none
+    field.autocorrectionType = .no
     field.isSecureTextEntry = true
     field.backgroundColor = .secondarySystemBackground
     field.layer.cornerRadius = 8

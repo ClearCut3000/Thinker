@@ -39,6 +39,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     setUpSignUpButton()
     setUpTable()
     title = "Profile"
+    fetchPosts()
   }
 
   //MARK: - Layout
@@ -155,7 +156,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
   }
 
   private func fetchPosts() {
-
+    DatabaseManager.shared.getPosts(for: currentEmail) { [weak self] posts in
+      self?.posts = posts
+      DispatchQueue.main.async {
+        self?.tableView.reloadData()
+      }
+    }
   }
 
   //MARK: - TableView Methods

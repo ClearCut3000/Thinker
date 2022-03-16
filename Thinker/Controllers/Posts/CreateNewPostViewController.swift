@@ -14,6 +14,7 @@ class CreateNewPostViewController: UITabBarController {
     let imageView = UIImageView()
     imageView.contentMode = .scaleAspectFill
     imageView.isUserInteractionEnabled = true
+    imageView.clipsToBounds = true
     imageView.image = UIImage(systemName: "photo")
     imageView.backgroundColor = .tertiarySystemBackground
     return imageView
@@ -48,6 +49,8 @@ class CreateNewPostViewController: UITabBarController {
     view.addSubview(headerImageView)
     view.addSubview(titleField)
     view.addSubview(textView)
+    let tap = UITapGestureRecognizer(target: self, action: #selector(didTapHeader))
+    headerImageView.addGestureRecognizer(tap)
     configureButtons()
   }
 
@@ -60,6 +63,26 @@ class CreateNewPostViewController: UITabBarController {
   }
 
   //MARK: - Methods
+  @objc private func didTapHeader() {
+    let picker = UIImagePickerController()
+    picker.delegate = self
+    let alert = UIAlertController(title: "Choose image source, please.", message: nil, preferredStyle: .actionSheet)
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+    if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+      alert.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { action in
+        picker.sourceType = .photoLibrary
+        self.present(picker, animated: true)
+      }))
+    }
+    if UIImagePickerController.isSourceTypeAvailable(.camera) {
+      alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { action in
+        picker.sourceType = .camera
+        self.present(picker, animated: true)
+      }))
+    }
+    present(alert, animated: true)
+  }
+
   private func configureButtons() {
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(didTapCancel))
     navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Post", style: .done, target: self, action: #selector(didTapPost))
@@ -73,9 +96,41 @@ class CreateNewPostViewController: UITabBarController {
     guard let title = titleField.text,
           let body = textView.text,
           let headerImage = selectedHeaderImage,
+          let email = UserDefaults.standard.string(forKey: "email"),
           !title.trimmingCharacters(in: .whitespaces).isEmpty,
-          !body.trimmingCharacters(in: .whitespaces).isEmpty else { return }
-    let post = BlogPost(identifier: UUID().uuidString , title: title, timeStamp: Date().timeIntervalSince1970, headerImageUrl: nil, text: body)
-    
+          !body.trimmingCharacters(in: .whitespaces).isEmpty else {
+            let alert = UIAlertController(title: "Enter post details.", message: "Please enter tile, body and select an image to continue", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            present(alert, animated: true)
+            return
+          }
+    let newPostId = UUID().uuidString
+    StorageManager.shared.uploadBlogHeaderImage(email: email, image: headerImage, postId: newPostId) { success in
+      guard success else { return }
+      StorageManager.shared.downloadUrlForPostHeader(email: email, postId: newPostId) { url in
+        guard let headerUrl = url else { return }
+        let post = BlogPost(identifier: newPostId , title: title, timeStamp: Date().timeIntervalSince1970, headerImageUrl: headerUrl, text: body)
+        DatabaseManager.shared.insert(blogPost: post, email: email) { [weak self] posted in
+          guard posted else { return }
+          DispatchQueue.main.async {
+            self?.didTapCancel()
+          }
+        }
+      }
+    }
+  }
+}
+
+//MARK: - UIImagePickerControllerDelegate & UINavigationControllerDelegate
+extension CreateNewPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+  func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    picker.dismiss(animated: true, completion: nil)
+  }
+
+  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    picker.dismiss(animated: true, completion: nil)
+    guard let image = info[.originalImage] as? UIImage else { return }
+    selectedHeaderImage = image
+    headerImageView.image = image
   }
 }

@@ -12,7 +12,8 @@ class PostPreviewTableViewCellViewModel {
   let imageUrl: URL?
   var imageData: Data?
 
-  init() {
-
+  init(title: String, imageUrl: URL?) {
+    self.title = title
+    self.imageUrl = imageUrl
   }
 }

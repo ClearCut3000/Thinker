@@ -34,6 +34,7 @@
 		3689F3D627E3C3DA0035FD20 /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F3D527E3C3DA0035FD20 /* PostPreviewTableViewCell.swift */; };
 		3689F3D827E3C61A0035FD20 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F3D727E3C61A0035FD20 /* PostHeaderTableViewCell.swift */; };
 		3689F3DA27E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F3D927E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift */; };
+		36BB343F27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB343E27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift */; };
 		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		3689F3D527E3C3DA0035FD20 /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
 		3689F3D727E3C61A0035FD20 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		3689F3D927E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		36BB343E27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +123,7 @@
 				365A01B727D92E4700EFA35B /* User.swift */,
 				365A01B927D92E9300EFA35B /* BlogPost.swift */,
 				3689F3D927E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift */,
+				36BB343E27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				365A01A727D6808900EFA35B /* ViewPostViewController.swift in Sources */,
 				365A01B127D6816200EFA35B /* StorageManager.swift in Sources */,
 				365A01BD27D9391300EFA35B /* PayWallViewController.swift in Sources */,
+				36BB343F27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

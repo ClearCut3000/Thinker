@@ -12,6 +12,8 @@ class ViewPostViewController: UITabBarController, UITableViewDelegate, UITableVi
   //MARK: - Properties
   private let post: BlogPost
 
+  private let isOwnedByCurrentUser: Bool
+
   private let tableView: UITableView = {
     let table = UITableView()
     table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -21,8 +23,9 @@ class ViewPostViewController: UITabBarController, UITableViewDelegate, UITableVi
 
 
   //MARK: - Init's
-  init(post: BlogPost) {
+  init(post: BlogPost, isOwnedByCurrentUser: Bool = false) {
     self.post = post
+    self.isOwnedByCurrentUser = isOwnedByCurrentUser
     super.init(nibName: nil, bundle: nil)
   }
 
@@ -37,6 +40,9 @@ class ViewPostViewController: UITabBarController, UITableViewDelegate, UITableVi
     view.addSubview(tableView)
     tableView.delegate = self
     tableView.dataSource = self
+    if !isOwnedByCurrentUser {
+      IAPManager.shared.loadPostViewed()
+    }
   }
 
   //MARK: - Layout

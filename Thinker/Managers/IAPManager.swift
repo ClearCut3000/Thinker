@@ -14,6 +14,8 @@ final class IAPManager {
   //MARK: - Properties
   static let shared = IAPManager()
 
+  private var postEligibleDate: Date?
+
   private init() {}
 
   //MARK: - Methods
@@ -95,5 +97,25 @@ final class IAPManager {
       completion(package)
     }
   }
+}
 
+//MARK: - Track Post Views
+extension IAPManager {
+  var canViewPost: Bool {
+    if isPremium() { return true }
+    guard let date = postEligibleDate else {
+      return true
+    }
+    UserDefaults.standard.set(0, forKey: "post_views")
+    return Date() >= date
+  }
+
+  public func loadPostViewed() {
+    let total = UserDefaults.standard.integer(forKey: "post_views")
+    UserDefaults.standard.set(total + 1, forKey: "post_views")
+    if total == 2 {
+      let hour: TimeInterval = 60 * 60
+      postEligibleDate = Date().addingTimeInterval(hour * 24)
+    }
+  }
 }

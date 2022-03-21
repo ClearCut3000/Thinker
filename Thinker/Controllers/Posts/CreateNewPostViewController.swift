@@ -108,11 +108,22 @@ class CreateNewPostViewController: UITabBarController {
     StorageManager.shared.uploadBlogHeaderImage(email: email, image: headerImage, postId: newPostId) { success in
       guard success else { return }
       StorageManager.shared.downloadUrlForPostHeader(email: email, postId: newPostId) { url in
-        guard let headerUrl = url else { return }
+        guard let headerUrl = url else {
+          DispatchQueue.main.async {
+            HapticsManager.shared.vibrate(for: .error)
+          }
+          return
+        }
         let post = BlogPost(identifier: newPostId , title: title, timeStamp: Date().timeIntervalSince1970, headerImageUrl: headerUrl, text: body)
         DatabaseManager.shared.insert(blogPost: post, email: email) { [weak self] posted in
-          guard posted else { return }
+          guard posted else {
+            DispatchQueue.main.async {
+              HapticsManager.shared.vibrate(for: .error)
+            }
+            return
+          }
           DispatchQueue.main.async {
+            HapticsManager.shared.vibrate(for: .success)
             self?.didTapCancel()
           }
         }

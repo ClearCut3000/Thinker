@@ -88,6 +88,7 @@ class SignInViewController: UITabBarController {
   @objc func didTapSignIn() {
     guard let email = emailField.text, !email.isEmpty,
           let password = passwordField.text, !password.isEmpty else { return }
+    HapticsManager.shared.vibrateForSelection()
     AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
       guard success else { return }
       IAPManager.shared.getSubscriptionsStatus(completion: nil)

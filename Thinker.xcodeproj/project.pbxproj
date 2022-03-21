@@ -35,6 +35,7 @@
 		3689F3D827E3C61A0035FD20 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F3D727E3C61A0035FD20 /* PostHeaderTableViewCell.swift */; };
 		3689F3DA27E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689F3D927E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift */; };
 		36BB343F27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB343E27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift */; };
+		36BB344127E8D3B8004273E2 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BB344027E8D3B8004273E2 /* HapticsManager.swift */; };
 		CF047C596D079631792831F8 /* Pods_Thinker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		3689F3D727E3C61A0035FD20 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		3689F3D927E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		36BB343E27E64D15004273E2 /* PostHeaderTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		36BB344027E8D3B8004273E2 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		6A74B944B11785C66292A1C3 /* Pods-Thinker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.debug.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.debug.xcconfig"; sourceTree = "<group>"; };
 		BCEE68D9B471A3C7C58F5B0C /* Pods-Thinker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Thinker.release.xcconfig"; path = "Target Support Files/Pods-Thinker/Pods-Thinker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +160,7 @@
 				365A01AC27D6812500EFA35B /* DatabaseManager.swift */,
 				365A01AE27D6814900EFA35B /* AuthManaget.swift */,
 				365A01B027D6816200EFA35B /* StorageManager.swift */,
+				36BB344027E8D3B8004273E2 /* HapticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				365A01BA27D92E9300EFA35B /* BlogPost.swift in Sources */,
 				365A01C527DA9E8000EFA35B /* PayWallDescriptionView.swift in Sources */,
 				365A01C227DA925D00EFA35B /* Extensions.swift in Sources */,
+				36BB344127E8D3B8004273E2 /* HapticsManager.swift in Sources */,
 				365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */,
 				365A01AD27D6812500EFA35B /* DatabaseManager.swift in Sources */,
 				3689F3DA27E3CD220035FD20 /* PostPreviewTableViewCellViewModel.swift in Sources */,

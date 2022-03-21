@@ -14,7 +14,19 @@ final class IAPManager {
   //MARK: - Properties
   static let shared = IAPManager()
 
-  private var postEligibleDate: Date?
+  static let formatter = ISO8601DateFormatter()
+
+  private var postEligibleViewDate: Date? {
+    get {
+      guard let string = UserDefaults.standard.string(forKey: "postEligibleViewDate") else { return nil }
+      return IAPManager.formatter.date(from: string)
+    }
+    set {
+      guard let date = newValue else { return }
+      let string = IAPManager.formatter.string(from: date)
+      UserDefaults.standard.set(string, forKey: "postEligibleViewDate")
+    }
+  }
 
   private init() {}
 
@@ -103,7 +115,7 @@ final class IAPManager {
 extension IAPManager {
   var canViewPost: Bool {
     if isPremium() { return true }
-    guard let date = postEligibleDate else {
+    guard let date = postEligibleViewDate else {
       return true
     }
     UserDefaults.standard.set(0, forKey: "post_views")
@@ -115,7 +127,7 @@ extension IAPManager {
     UserDefaults.standard.set(total + 1, forKey: "post_views")
     if total == 2 {
       let hour: TimeInterval = 60 * 60
-      postEligibleDate = Date().addingTimeInterval(hour * 24)
+      postEligibleViewDate = Date().addingTimeInterval(hour * 24)
     }
   }
 }

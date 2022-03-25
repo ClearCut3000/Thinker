@@ -28,7 +28,7 @@ class PayWallViewController: UIViewController {
     let button = UIButton()
     button.setTitle("Restore Purchases", for: .normal)
     button.backgroundColor = .systemBlue
-    button.setTitleColor(.link, for: .normal)
+    button.setTitleColor(.white, for: .normal)
     button.layer.cornerRadius = 8
     button.layer.masksToBounds = true
     return button

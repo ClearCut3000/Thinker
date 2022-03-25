@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364AFF3727EDEC370065BB29 /* scr001.png in Resources */ = {isa = PBXBuildFile; fileRef = 364AFF3227EDEC310065BB29 /* scr001.png */; };
+		364AFF3827EDEC370065BB29 /* scr004.png in Resources */ = {isa = PBXBuildFile; fileRef = 364AFF3327EDEC330065BB29 /* scr004.png */; };
+		364AFF3927EDEC370065BB29 /* scr002.png in Resources */ = {isa = PBXBuildFile; fileRef = 364AFF3427EDEC340065BB29 /* scr002.png */; };
+		364AFF3A27EDEC370065BB29 /* scr003.png in Resources */ = {isa = PBXBuildFile; fileRef = 364AFF3527EDEC350065BB29 /* scr003.png */; };
+		364AFF3B27EDEC370065BB29 /* scr005.png in Resources */ = {isa = PBXBuildFile; fileRef = 364AFF3627EDEC370065BB29 /* scr005.png */; };
 		365A018627D66DE600EFA35B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018527D66DE600EFA35B /* AppDelegate.swift */; };
 		365A018827D66DE600EFA35B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018727D66DE600EFA35B /* SceneDelegate.swift */; };
 		365A018A27D66DE600EFA35B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A018927D66DE600EFA35B /* HomeViewController.swift */; };
@@ -41,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		0A9BA05EDF28DB25F609FF06 /* Pods_Thinker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Thinker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		364AFF3227EDEC310065BB29 /* scr001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scr001.png; sourceTree = "<group>"; };
+		364AFF3327EDEC330065BB29 /* scr004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scr004.png; sourceTree = "<group>"; };
+		364AFF3427EDEC340065BB29 /* scr002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scr002.png; sourceTree = "<group>"; };
+		364AFF3527EDEC350065BB29 /* scr003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scr003.png; sourceTree = "<group>"; };
+		364AFF3627EDEC370065BB29 /* scr005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scr005.png; sourceTree = "<group>"; };
 		365A018227D66DE600EFA35B /* Thinker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thinker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365A018527D66DE600EFA35B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365A018727D66DE600EFA35B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +99,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364AFF3127EDEA5D0065BB29 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				364AFF3227EDEC310065BB29 /* scr001.png */,
+				364AFF3427EDEC340065BB29 /* scr002.png */,
+				364AFF3527EDEC350065BB29 /* scr003.png */,
+				364AFF3327EDEC330065BB29 /* scr004.png */,
+				364AFF3627EDEC370065BB29 /* scr005.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		365A017927D66DE600EFA35B = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +190,7 @@
 		365A019D27D6713100EFA35B /* SupportedFiles */ = {
 			isa = PBXGroup;
 			children = (
+				364AFF3127EDEA5D0065BB29 /* Screenshots */,
 				365A018527D66DE600EFA35B /* AppDelegate.swift */,
 				365A018727D66DE600EFA35B /* SceneDelegate.swift */,
 				365A018E27D66DEE00EFA35B /* Assets.xcassets */,
@@ -302,9 +325,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364AFF3A27EDEC370065BB29 /* scr003.png in Resources */,
 				365A019227D66DEE00EFA35B /* LaunchScreen.storyboard in Resources */,
+				364AFF3B27EDEC370065BB29 /* scr005.png in Resources */,
+				364AFF3727EDEC370065BB29 /* scr001.png in Resources */,
 				365A018F27D66DEE00EFA35B /* Assets.xcassets in Resources */,
+				364AFF3827EDEC370065BB29 /* scr004.png in Resources */,
 				365A01B627D7DD7C00EFA35B /* GoogleService-Info.plist in Resources */,
+				364AFF3927EDEC370065BB29 /* scr002.png in Resources */,
 				365A01C727DBD51A00EFA35B /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
